@@ -152,7 +152,7 @@ try {
             "-DOIDN_ZIP_MODE=ON"
             '-DCMAKE_OSX_ARCHITECTURES=x86_64'
             "-DCMAKE_INSTALL_PREFIX=../../install/$OS"
-            '-DOIDN_ARCH="X64"'
+            '-DOIDN_ARCH="x86-64"'
             "-DOIDN_FILTER_RTLIGHTMAP=OFF"
         )
 
@@ -164,7 +164,7 @@ try {
             "-DOIDN_ZIP_MODE=ON"
             '-DCMAKE_OSX_ARCHITECTURES=arm64'
             "-DCMAKE_INSTALL_PREFIX=../../install/$OS-arm64"
-            '-DOIDN_ARCH="ARM64"'
+            '-DOIDN_ARCH="arm"'
             "-DOIDN_FILTER_RTLIGHTMAP=OFF"
         )
 
