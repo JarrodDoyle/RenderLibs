@@ -181,6 +181,7 @@ try {
             "-DEMBREE_GEOMETRY_SUBDIVISION=OFF"
             "-DEMBREE_GEOMETRY_INSTANCE=OFF"
             "-DEMBREE_GEOMETRY_USER=ON"
+            "-DEMBREE_BACKFACE_CULLING=ON"
 
             # Enable only AVX and AVX2 for faster github actions deployment
             "-DEMBREE_MAX_ISA=NONE"
@@ -210,6 +211,7 @@ try {
             "-DEMBREE_GEOMETRY_SUBDIVISION=OFF"
             "-DEMBREE_GEOMETRY_INSTANCE=OFF"
             "-DEMBREE_GEOMETRY_USER=ON"
+            "-DEMBREE_BACKFACE_CULLING=ON"
 
             "-DEMBREE_ARM=ON"
 
@@ -264,6 +266,7 @@ try {
             "-DEMBREE_GEOMETRY_SUBDIVISION=OFF"
             "-DEMBREE_GEOMETRY_INSTANCE=OFF"
             "-DEMBREE_GEOMETRY_USER=ON"
+            "-DEMBREE_BACKFACE_CULLING=ON"
 
             # Enable only AVX, AVX2 and NEON for faster github actions deployment
             "-DEMBREE_MAX_ISA=NONE"
