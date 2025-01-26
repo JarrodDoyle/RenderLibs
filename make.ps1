@@ -134,13 +134,13 @@ try {
     {
         build "oneTBB" @(
             "-DTBB_TEST=OFF"
-            '-DCMAKE_OSX_ARCHITECTURES="x86_64"'
+            '-DCMAKE_OSX_ARCHITECTURES=x86_64'
             "-DCMAKE_INSTALL_PREFIX=../../install/$OS"
         )
 
         build "oneTBB" @(
             "-DTBB_TEST=OFF"
-            '-DCMAKE_OSX_ARCHITECTURES="arm64"'
+            '-DCMAKE_OSX_ARCHITECTURES=arm64'
             "-DCMAKE_INSTALL_PREFIX=../../install/$OS-arm64"
         )
 
@@ -150,7 +150,7 @@ try {
             "-DISPC_VERSION=$ispcVersion"
             "-DOIDN_APPS=OFF"
             "-DOIDN_ZIP_MODE=ON"
-            '-DCMAKE_OSX_ARCHITECTURES="x86_64"'
+            '-DCMAKE_OSX_ARCHITECTURES=x86_64'
             "-DCMAKE_INSTALL_PREFIX=../../install/$OS"
             '-DOIDN_ARCH="X64"'
             "-DOIDN_FILTER_RTLIGHTMAP=OFF"
@@ -162,7 +162,7 @@ try {
             "-DISPC_VERSION=$ispcVersion"
             "-DOIDN_APPS=OFF"
             "-DOIDN_ZIP_MODE=ON"
-            '-DCMAKE_OSX_ARCHITECTURES="arm64"'
+            '-DCMAKE_OSX_ARCHITECTURES=arm64'
             "-DCMAKE_INSTALL_PREFIX=../../install/$OS-arm64"
             '-DOIDN_ARCH="ARM64"'
             "-DOIDN_FILTER_RTLIGHTMAP=OFF"
@@ -193,7 +193,7 @@ try {
 
             "-DEMBREE_ARM=OFF"
 
-            '-DCMAKE_OSX_ARCHITECTURES="x86_64"'
+            '-DCMAKE_OSX_ARCHITECTURES=x86_64'
             "-DCMAKE_PREFIX_PATH=../../install/$OS"
             "-DCMAKE_INSTALL_PREFIX=../../install/$OS"
         )
@@ -215,14 +215,14 @@ try {
 
             "-DEMBREE_ARM=ON"
 
-            '-DCMAKE_OSX_ARCHITECTURES="arm64"'
+            '-DCMAKE_OSX_ARCHITECTURES=arm64'
             "-DCMAKE_PREFIX_PATH=../../install/$OS-arm64"
             "-DCMAKE_INSTALL_PREFIX=../../install/$OS-arm64"
         )
 
         build "openpgl" @(
             "-DCMAKE_PREFIX_PATH=../../install/$OS"
-            '-DCMAKE_OSX_ARCHITECTURES="x86_64"'
+            '-DCMAKE_OSX_ARCHITECTURES=x86_64'
             "-DCMAKE_INSTALL_PREFIX=../../install/$OS"
             "-DOPENPGL_ARM=OFF"
             $rpath
@@ -230,7 +230,7 @@ try {
 
         build "openpgl" @(
             "-DCMAKE_PREFIX_PATH=../../install/$OS-arm64"
-            '-DCMAKE_OSX_ARCHITECTURES="arm64"'
+            '-DCMAKE_OSX_ARCHITECTURES=arm64'
             "-DCMAKE_INSTALL_PREFIX=../../install/$OS-arm64"
             "-DOPENPGL_ARM=ON"
             $rpath
